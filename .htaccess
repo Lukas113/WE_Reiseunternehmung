@@ -1,0 +1,20 @@
+# The following .htaccess configuration ensures that HTTPS is used (except on localhost) and redirects everything (except asset requests) to the index.php file:
+
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} !=localhost
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [QSA,L,R=301]
+
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteRule ^(?!.*assets/)(.*) index.php [QSA,L,E=ORIGINAL_PATH:/$1]
+RewriteRule assets/(.*) views/assets/$1 [QSA,L]
+
+#Denies not allowed extensions
+#deny from all
+<Files ~ “^w+.(jpe?g|png|pdf)$”>
+order deny,allow
+allow from all
+</Files>
+

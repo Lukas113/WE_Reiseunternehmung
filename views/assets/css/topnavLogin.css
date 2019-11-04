@@ -1,0 +1,28 @@
+#loginButton {
+  float: right;
+  padding: 4px;
+  margin-top: 6px;
+  margin-left: 6px;
+  background: #0080f7;
+  border: none;
+  cursor: pointer;
+  color: white;
+  margin-top: 8px;
+  border-bottom: 1px solid #dfe7f1;
+  width: 70px;
+}
+
+.topnav input {
+  padding: 4px;
+  margin-top: 8px;
+  border: none;
+  width: 170px;
+  background: rgba(102,137,204,0.15);
+  border-bottom: 1px solid #dfe7f1;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  color: inherit;
+  text-indent: 6px;
+}
+

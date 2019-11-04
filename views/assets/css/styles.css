@@ -1,0 +1,39 @@
+body {
+  background-color: rgb(0,0,0);
+}
+
+#section1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets/img/Bus%20travel.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar-light .navbar-brand {
+  background-image: url("../../assets/img/logo.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+}
+
+#title {
+  font-family: Capriola, sans-serif;
+  background-position: center;
+  padding: 20px;
+  color: rgb(255,255,255);
+  background-color: rgba(62,56,56,0.53);
+}
+
+@media (max-width: 768px) {
+  #section1 {
+    background-image: url("../../assets/img/Bus%20travel%20mobile.jpg");
+  }
+}
+
+.text-left.d-xl-flex.justify-content-xl-center {
+  overflow-x: auto;
+}

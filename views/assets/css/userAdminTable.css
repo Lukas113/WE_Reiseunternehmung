@@ -1,0 +1,35 @@
+.tableStyle {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: rgba(153,153,153,0.46);
+}
+
+.tableStyle td, .tableStyle th {
+  border: 1px solid #ffffff;
+  padding: 5px;
+}
+
+.tableStyle tr:nth-child(even) {
+  background-color: rgba(242,242,242,0.58);
+}
+
+.tableStyle tr:hover {
+  background-color: rgba(0,0,0,0.68);
+  color: white;
+}
+
+.tableStyle th {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  background-color: rgba(247,127,0,0.57);
+  color: white;
+}
+
+.scrollableDiv {
+  overflow-x: auto;
+}
+
+div.scrollableDiv {
+   overflow-x: auto;
+}

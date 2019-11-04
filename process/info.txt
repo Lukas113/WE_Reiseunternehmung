@@ -1,0 +1,1 @@
+process: This folder will contain all the processes, which basically means all the files than handle form submissions and other form of processes. Limit these files to a three step process, input > process > redirect.
